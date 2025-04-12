@@ -57,3 +57,48 @@ A aplicação:
     "categories": ["saúde", "bodybuilder"]
   }
 ]
+```
+## 🛠️ Tecnologias
+Frontend: (ex: HTML, CSS, JavaScript ou framework que for usar)
+
+Backend/API: JSON simulado/local ou API real
+
+Hospedagem/API: (ex: Firebase, Vercel, Netlify, etc — opcional)
+
+Integração com YouTube (via videoId)
+
+## 📦 Estrutura de dados
+Cada item do JSON representa um episódio, com as seguintes informações:
+
+Campo	Tipo	Descrição
+podcastName	string	Nome do podcast
+episodio	string	Título do episódio
+videoId	string	ID do vídeo no YouTube
+cover	string	URL da imagem de capa
+link	string	Link completo para o vídeo no YouTube
+categories	string[]	Lista de categorias associadas ao episódio
+## 🧪 Status do Projeto
+🚧 Em desenvolvimento
+Planejando evoluir para integração completa com YouTube e filtros mais avançados.
+
+## 📈 Futuras melhorias
+Sistema de favoritos/salvar episódios
+
+Player embutido
+
+Autenticação de usuários
+
+Compartilhamento de episódios
+
+Dark mode
+
+## 🤝 Contribuindo
+Contribuições são bem-vindas! Sinta-se à vontade para abrir uma issue ou pull request.
+
+## 📄 Licença
+Este projeto está licenciado sob a Licença MIT.
+
+## ✨ Autor
+Desenvolvido com ❤️ por Fagner Lopes Paiva
+GitHub
+
