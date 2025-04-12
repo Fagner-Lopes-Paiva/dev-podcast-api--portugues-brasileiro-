@@ -1,81 +1,59 @@
-<div align="center">
+# 🎧 Dev Podcast
 
-  <img src="./.github/assets/blue-saiyan-bg.png" alt="Logo" height="200">
-  <h1 align="center"><strong>NODE BOILERPLATE - BLUE EDITION</strong></h1>
-  <p align="center">
-	  Don't start a new Node project from zero!<br> Use this simple <b>Nodejs</b> boilerplate with pre-configured <b>Typescript</b> in a modern way.
-  </p>
+O **Dev Podcast** é um aplicativo que centraliza episódios de podcasts em vídeo, organizados por categorias. Inspirado na experiência da Netflix, o projeto tem como objetivo proporcionar uma navegação fluida e agradável entre episódios diversos, com foco em **podcasts em vídeo** de diferentes temas.
 
-</div>
+---
 
-<br />
+## 🧠 Descrição
 
-  <!-- Badges -->
-<div align="center">
-  
-  [![TypeScript version][ts-badge]][typescript-5-4]
-  [![Node.js version][nodejs-badge]][nodejs]
+O Dev Podcast oferece uma plataforma moderna para o consumo de podcasts em vídeo. Os episódios são organizados por categorias e o usuário pode filtrar por nome de podcast, facilitando a descoberta de conteúdo relevante.
 
-</div>
+---
 
-# 🚀 Technologies
+## 🌐 Domínio
 
-This code source was developed with the following items:
+A aplicação é voltada exclusivamente para **podcasts em vídeo**, cobrindo uma ampla gama de temas como:
 
-### 📦 Dependencies
+- Saúde
+- Fitness
+- Mentalidade
+- Humor
+- Bodybuilding
+- Entre outros...
 
-- [typescript][typescript-npm] - Superset for application scale JavaScript development
-- [tsx][tsx-npm] - TypeScript Execute (tsx): Enable Node.js to run TypeScript
-- [tsup][tsup-npm] - Bundle your TypeScript library with no config, powered by esbuild
-- [@types/node][@types/node-npm] - type definitions for node
+---
 
-### 📄 Files
+## 🚀 Features
 
-- `.gitignore` - Ignore folders like node_modules
-- `.env` - Enviroment variables
-- `tsconfig.json` - Typescript configure Options
+✅ Lista de episódios organizados por categoria  
+✅ Filtro por nome do podcast  
+✅ Interface semelhante ao modelo Netflix  
+✅ Capa do vídeo e link direto para o YouTube  
+✅ Integração com API REST (formato JSON)  
 
-### ⚡ Scripts
+---
 
-- `npm run dist`: Compiles TypeScript files to JavaScript in the dist directory.
-- `npm run start:dev`: Runs the server in development mode with environment variables loaded from the .env file.
-- `npm run start:watch`: Runs the server in development mode with support for automatic reload on file changes.
-- `npm run start:dist`: Compiles the project and runs the compiled version from the dist directory.
+## 🧭 Como funciona
 
-# 👨‍💻 How To Use
+A aplicação:
 
-click in **[Use this template]** OR
+1. Faz uma requisição para uma API REST que retorna os dados dos episódios;
+2. Organiza os episódios em seções por categoria;
+3. Permite que o usuário filtre os episódios por nome do podcast;
+4. Exibe a **imagem de capa**, o **nome do episódio** e o **link para o vídeo** (YouTube).
 
-To clone and run this application, you'll need [Git](https://git-scm.com), [Node.js v20+](https://nodejs.org/en/) + [NPM v10+](https://nodejs.org/en/) installed on your computer. From your command line:
+---
 
-```bash
-# Clone this repository
-$ git clone https://github.com/felipeAguiarCode/node-blue-boilerplate
+## 📡 Exemplo de retorno da API
 
-# Go into the repository
-$ cd node-blue-boilerplate
-
-# Install dependencies
-$ npm install
-```
-
-## Author
-
-| [<img src="https://avatars3.githubusercontent.com/u/37452836?s=96&v=4"><br><sub>Felipe Aguiar</sub>](https://github.com/felipeAguiarCode) |
-| :---------------------------------------------------------------------------------------------------------------------------------------: |
-|                                            [Linkedin](www.linkedin.com/in/felipe-aguiar-exe/)                                             |
-
-# Credits
-
-icons by [Pino Lamanna][dribble-icon]
-
-[typescript]: https://www.typescriptlang.org/
-[typescript-5-4]: https://www.typescriptlang.org/
-[ts-badge]: https://img.shields.io/badge/TypeScript-5.4-blue.svg
-[nodejs-badge]: https://img.shields.io/badge/Node.js->=%2020.00-blue.svg
-[nodejs]: https://nodejs.org/
-[dribble-icon]: https://dribbble.com/Schakalwal
-[typescript-npm]: https://www.npmjs.com/package/typescript
-[tsx-npm]: https://www.npmjs.com/package/tsx
-[tsup-npm]: https://www.npmjs.com/package/tsup
-[@types/node-npm]: https://www.npmjs.com/package/@types/node
+```json
+[
+  {
+    "podcastName": "Flow",
+    "episodio": "DANIEL LOPEZ - Flow #357",
+    "videoId": "o0nj1kdApdg",
+    "cover": "https://i.ytimg.com/vi/o0nj1kdApdg/maxresdefault.jpg",
+    "link": "https://www.youtube.com/watch?v=o0nj1kdApdg",
+    "categories": ["saúde", "bodybuilder"]
+  }
+]
